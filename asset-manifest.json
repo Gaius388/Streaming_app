@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Streaming_app/static/css/main.0399d5ee.css",
-    "main.js": "/Streaming_app/static/js/main.c332d724.js",
+    "main.js": "/Streaming_app/static/js/main.e6615734.js",
     "static/media/man-sing.svg": "/Streaming_app/static/media/man-sing.54783d3198534d615a59170b064bcf54.svg",
     "static/media/goldenage.svg": "/Streaming_app/static/media/goldenage.3a1ed9298eb6e44d16899ea1eba8c61c.svg",
     "static/media/Ellipse 2.svg": "/Streaming_app/static/media/Ellipse 2.dcb7732a97dd859bbd6114b8d3b31b15.svg",
@@ -24,10 +24,10 @@
     "static/media/like__button-transparent.svg": "/Streaming_app/static/media/like__button-transparent.c749a3d232b6a5da0fd33a001f810380.svg",
     "static/media/more_vert.svg": "/Streaming_app/static/media/more_vert.cd15e6d1f3ba4b3b84611a91eb3b0fe5.svg",
     "main.0399d5ee.css.map": "/Streaming_app/static/css/main.0399d5ee.css.map",
-    "main.c332d724.js.map": "/Streaming_app/static/js/main.c332d724.js.map"
+    "main.e6615734.js.map": "/Streaming_app/static/js/main.e6615734.js.map"
   },
   "entrypoints": [
     "static/css/main.0399d5ee.css",
-    "static/js/main.c332d724.js"
+    "static/js/main.e6615734.js"
   ]
 }
