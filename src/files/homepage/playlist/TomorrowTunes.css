@@ -1,0 +1,86 @@
+/* .tomorrow-tunes__section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 2fr;
+  margin-left: 7em;
+  padding: 0 3em 0 0;
+  row-gap: 3em;
+}
+.tomorrow-tunes__text {
+  display: grid;
+  grid-template-columns: 16em auto;
+  grid-template-rows: 15.5em auto;
+  margin-top: 3.5em;
+  column-gap: 0.6em;
+}
+.tomorrow__text-click {
+  cursor: pointer;
+}
+.shoe_and_radio {
+  width: 15em;
+  border-radius: 1.5em;
+}
+.tunes__text {
+  display: grid;
+  align-items: end;
+  font-size: 0.8rem;
+}
+.tunes__text h3 {
+  font-size: 1.9rem;
+  margin-top: 1.5em;
+  color: #a4c7c6;
+}
+.tunes__text p {
+  width: 60%;
+  color: #efeee0;
+}
+.active__btn {
+  display: flex;
+}
+.active__btn button {
+  color: white;
+  padding: 0.7em 1.2em;
+  border-radius: 1.5em;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(5px);
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  cursor: pointer;
+}
+.play-icon {
+  padding-right: 1em;
+}
+.music-icon {
+  padding-right: 1em;
+}
+.btn__like img {
+  padding: 0;
+}
+.playlist__music-tab {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 8em 20em 20em 20em 4em;
+  grid-template-rows: 4.5em;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(5px);
+  border-radius: 1em;
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+.playlist__img {
+  width: 2.5em;
+}
+.playlist__1 {
+  display: flex;
+  padding-left: 1em;
+}
+.playlist__like {
+  margin-left: 0.8em;
+  display: flex;
+}
+.playlist__5 img {
+  cursor: pointer;
+} */

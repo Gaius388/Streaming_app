@@ -1,0 +1,109 @@
+/* .play__section {
+  display: grid;
+  grid-template-columns: 8em auto 10em;
+  grid-template-rows: 7em;
+  width: 100%;
+  align-items: center;
+  column-gap: 2em;
+  padding: 0 3em 0 7em;
+  background: #1e1e1e;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+}
+.play__section-img {
+  display: grid;
+  grid-template-columns: 4.5em 1fr;
+  grid-template-rows: auto;
+  font-size: 0.8rem;
+  justify-items: center;
+  align-items: center;
+}
+.play__section-img img {
+  display: flex;
+  width: 4em;
+  border-radius: 1em;
+}
+
+.play__section-active {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 0.2em;
+  justify-items: center;
+  row-gap: 1em;
+  border: 2px solid red;
+}
+.play__section-progress {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.3em;
+  width: 45em;
+  background: linear-gradient(
+    to right,
+    #facd66 0%,
+    rgba(255, 255, 255, 0.04) 1%,
+    rgba(255, 255, 255, 0.04) 40%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  cursor: pointer;
+  outline: none;
+  transition: background 450ms ease-in;
+  border-radius: 3em;
+  padding: 0;
+}
+.play__section-progress::-webkit-slider-thumb {
+  appearance: none;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  outline: 0.1em solid yellow;
+  outline-offset: 0.125rem;
+  background: #facd66;
+  cursor: pointer;
+  box-shadow: 0 0 0.125rem 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+.play__section-progress:hover {
+  opacity: 1;
+}
+
+.volume__progress{
+   -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(
+    to right,
+    #facd66 0%,
+    rgba(255, 255, 255, 0.04) 1%,
+    rgba(255, 255, 255, 0.04) 40%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  cursor: pointer;
+  outline: none;
+  transition: background 450ms ease-in;
+  height: 0.3em;
+}
+.volume_progress::-webkit-slider-thumb {
+  appearance: none;
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none;
+}
+.play__section-active1 img {
+  width: 0.7em;
+  margin-right: 3em;
+  cursor: pointer;
+}
+.play__section-volume {
+  display: grid;
+  grid-template-columns: 2em auto;
+  grid-template-rows: auto;
+  align-items: center;
+}
+.play__section-volume div {
+  background-color: rgba(255, 255, 255, 0.07);
+  height: 0.2em;
+} */
