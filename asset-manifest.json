@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Streaming_app/static/css/main.0399d5ee.css",
+    "main.js": "/Streaming_app/static/js/main.c332d724.js",
+    "static/media/man-sing.svg": "/Streaming_app/static/media/man-sing.54783d3198534d615a59170b064bcf54.svg",
+    "static/media/goldenage.svg": "/Streaming_app/static/media/goldenage.3a1ed9298eb6e44d16899ea1eba8c61c.svg",
+    "static/media/Ellipse 2.svg": "/Streaming_app/static/media/Ellipse 2.dcb7732a97dd859bbd6114b8d3b31b15.svg",
+    "static/media/Ellipse 6.svg": "/Streaming_app/static/media/Ellipse 6.8614ade44ae3a8b9106cf42f0fb9d0ce.svg",
+    "static/media/tomorrowTune.svg": "/Streaming_app/static/media/tomorrowTune.cd68a59296db4e21829a62cfe7424fc9.svg",
+    "static/media/shoe_and_radio.svg": "/Streaming_app/static/media/shoe_and_radio.47ac0e5c39b50fb330922e6871025536.svg",
+    "static/media/Ellipse 5.svg": "/Streaming_app/static/media/Ellipse 5.e0fc8d046c6a9bc142ceda00cc8732ba.svg",
+    "static/media/Ellipse 4.svg": "/Streaming_app/static/media/Ellipse 4.28a074de07bdf312e9dc7a97f4d783bf.svg",
+    "static/media/Ellipse 3.svg": "/Streaming_app/static/media/Ellipse 3.46a03e41c0275b900a9713b7eecb8fe5.svg",
+    "static/media/regaee.svg": "/Streaming_app/static/media/regaee.aa5543ea15de39860d97924eaf64539a.svg",
+    "static/media/icon-music1.svg": "/Streaming_app/static/media/icon-music1.b957eefdb3695eedea369d26f18b1bd4.svg",
+    "static/media/music-icon.svg": "/Streaming_app/static/media/music-icon.b0380444d7a1a9b2c93e79198e7d03ad.svg",
+    "static/media/r_and_b.svg": "/Streaming_app/static/media/r_and_b.143c03ba827ccd7a7f39161bab76338e.svg",
+    "static/media/like__button.svg": "/Streaming_app/static/media/like__button.cdf5e26569fd03053de9945d7d96fa24.svg",
+    "static/media/play-icon.svg": "/Streaming_app/static/media/play-icon.cdc3a68247daa500c5a5d791c942b863.svg",
+    "static/media/love-icon.svg": "/Streaming_app/static/media/love-icon.b310d67bcf0d98435190fd591ed88409.svg",
+    "static/media/icon-logout.svg": "/Streaming_app/static/media/icon-logout.c9cc32050691899f367ddfe61a4ddb17.svg",
+    "static/media/icon-profile.svg": "/Streaming_app/static/media/icon-profile.c9d3ea03a8a8ae6d6a7c871f38436d27.svg",
+    "index.html": "/Streaming_app/index.html",
+    "static/media/like__button-transparent.svg": "/Streaming_app/static/media/like__button-transparent.c749a3d232b6a5da0fd33a001f810380.svg",
+    "static/media/more_vert.svg": "/Streaming_app/static/media/more_vert.cd15e6d1f3ba4b3b84611a91eb3b0fe5.svg",
+    "main.0399d5ee.css.map": "/Streaming_app/static/css/main.0399d5ee.css.map",
+    "main.c332d724.js.map": "/Streaming_app/static/js/main.c332d724.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0399d5ee.css",
+    "static/js/main.c332d724.js"
+  ]
+}
