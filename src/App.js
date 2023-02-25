@@ -8,13 +8,13 @@ import Construct from "./files/homepage/Construct";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ""}>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<DisplayPage />} />
           <Route path="preview" element={<Collections />} />
-          <Route path='radio' element={<Construct/>}/>
-          <Route path='video' element={<Construct/>}/>
+          <Route path="radio" element={<Construct />} />
+          <Route path="video" element={<Construct />} />
         </Route>
       </Routes>
     </BrowserRouter>
