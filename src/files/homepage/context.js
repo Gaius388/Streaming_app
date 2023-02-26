@@ -106,7 +106,7 @@ export const AppProvider = ({ children }) => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "6295cd9b92mshf51b1e8c0f69536p11625ajsn10c6aedf3220",
+      "X-RapidAPI-Key": "9ee8477928msh123a659c3e0e11cp1ad15ejsn9a07e4d818a9",
       "X-RapidAPI-Host": "shazam-song-recognizer.p.rapidapi.com",
     },
   };
