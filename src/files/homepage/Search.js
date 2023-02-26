@@ -19,8 +19,8 @@ const Search = () => {
                 alt={data.track.title}
                 className="search_img"
               />
-              <p class="search__title-name">${data.track.title}</p>
-              <p class="search__title-album">${data.track.subtitle}</p>
+              <p class="search__title-name">{data.track.title}</p>
+              <p class="search__title-album">{data.track.subtitle}</p>
             </div>
           </a>
         );
