@@ -11,12 +11,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   background-color: #1d2123;
   color: white;
   font-family: "Quicksand", sans-serif;
   padding-bottom: 6em;
+}
+.main_page {
+  position: relative;
+}
+.close_submenu {
+  display: none;
 }
 .hidden {
   display: none;
@@ -28,6 +35,10 @@ body {
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
+}
+.menu_bar {
+  width: 1.5em;
+  display: none;
 }
 .nav__section {
   grid-column: 1/2;
@@ -45,6 +56,9 @@ body {
   position: fixed;
   top: 1em;
   left: 1em;
+}
+.sub_menu {
+  display: none;
 }
 .icon-home,
 .icon-preview,
@@ -194,13 +208,13 @@ body {
   display: flex;
   align-items: center;
 }
-.lower__text1{
+.lower__text1 {
   margin-right: 0.7em;
 }
 .lower__text1 img + img {
   margin-left: -0.6em;
 }
-.lower__text2{
+.lower__text2 {
   margin-right: 0.6em;
 }
 .top__song {
@@ -632,7 +646,6 @@ body {
   grid-template-rows: auto;
   max-height: 20em;
   position: absolute;
-  /* z-index: 4; */
   background-color: #1d2123;
   top: 3em;
   left: 7em;
@@ -681,8 +694,80 @@ body {
   .nav__section {
     display: none;
   }
-  .icon-music1 {
+
+  .menu_bar {
+    width: 2.5em;
+    padding: 0.7em 0 0 1em;
+    cursor: pointer;
+    display: block;
+  }
+  .input {
+    width: 65%;
+    z-index: 4;
+    inset: 0 0 0 30%;
+  }
+  .search__result {
+    left: 30%;
+  }
+  .search {
+    width: 95%;
+  }
+  .close_icon {
     position: absolute;
+    margin-top: -1em;
+    right: 0.5em;
+    z-index: 4;
+  }
+  .icon-music1 {
+    top: 0.5em;
+    left: 4em;
+  }
+  .sub_menu {
+    display: grid;
+    position: absolute;
+    z-index: 150;
+    top: 0;
+    height: 100vh;
+  }
+  .close_submenu {
+    display: block;
+    position: absolute;
+    z-index: 150;
+    right: 15%;
+    color: rgb(239, 238, 224);
+    cursor: pointer;
+    top: 1em;
+    font-size: 1.5em;
+  }
+  .icon__1_submenu {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(6, 2em);
+    justify-items: left;
+    padding-left: 2.5em;
+    background-color: #1a1e1f;
+    row-gap: 1.5em;
+    padding-top: 3em;
+    margin-top: 0;
+  }
+  .menu_desc {
+    display: flex;
+    align-items: center;
+  }
+  .desc_none {
+    opacity: 0.25;
+  }
+  .icon-home,
+  .icon-preview,
+  .icon-logout,
+  .icon-radio,
+  .icon-video {
+    display: flex;
+    align-items: center;
+  }
+  .icon__1_submenu span {
+    color: rgb(239, 238, 224);
+    margin-left: 1em;
   }
   .display__section {
     row-gap: 1em;

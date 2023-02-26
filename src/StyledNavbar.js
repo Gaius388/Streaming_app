@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Play from "./files/homepage/play/Play";
 import icon_music from "./images/icon-music1.svg";
 import icon_profile from "./images/icon-profile.svg";
 import icon_logout from "./images/icon-logout.svg";
+import menuBar from "./images/bars-solid.svg";
 import { useGlobalContext } from "./files/homepage/context";
 import Search from "./files/homepage/Search";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineCloseCircle, AiOutlineClose } from "react-icons/ai";
 
 const StyledNavbar = () => {
   const {
@@ -15,14 +16,22 @@ const StyledNavbar = () => {
     setSongSearch,
     handleSubmit,
     loading,
-    setSearch,
     setLoading,
   } = useGlobalContext();
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <>
-        <div>
-          <img src={icon_music} alt="icon-music1" className="icon-music1" />
-        </div>
+    <section className="main_page">
+      <div>
+        <img
+          src={menuBar}
+          alt="menu bar"
+          className="menu_bar"
+          onClick={() => setShowMenu(true)}
+        />
+      </div>
+      <div>
+        <img src={icon_music} alt="icon-music1" className="icon-music1" />
+      </div>
       <div className="nav__section">
         <div className="icon__1">
           <NavLink
@@ -84,6 +93,91 @@ const StyledNavbar = () => {
           <img src={icon_logout} alt="icon-logout" className="icon-logout" />
         </div>
       </div>
+      <div className={showMenu ? "sub_menu" : "hidden"}>
+        <AiOutlineClose
+          className="close_submenu"
+          onClick={() => setShowMenu(false)}
+        />
+        <div className="icon__1_submenu">
+          <NavLink
+            to="/"
+            onClick={() => {
+              setShowMenu(false);
+              setAlbum(false);
+            }}
+            className={({ isActive }) =>
+              isActive ? "icon-home yellow__active menu_desc" : "icon-home"
+            }
+          >
+            <svg width="18" height="20" viewBox="0 0 18 20">
+              <path d="M6.38171 18.0503V15.239C6.3817 14.5266 6.96099 13.9478 7.67852 13.9433H10.3132C11.0339 13.9433 11.6182 14.5234 11.6182 15.239V18.0421C11.6182 18.66 12.1203 19.1622 12.7427 19.1667H14.5401C15.3796 19.1688 16.1855 18.8392 16.7799 18.2507C17.3742 17.6621 17.7083 16.8629 17.7083 16.0294V8.0437C17.7083 7.37045 17.4077 6.73183 16.8875 6.29989L10.781 1.45142C9.7136 0.603372 8.18905 0.630768 7.15323 1.51661L1.17805 6.29989C0.633305 6.7191 0.307716 7.35961 0.291626 8.0437V16.0213C0.291626 17.7584 1.71006 19.1667 3.45978 19.1667H5.21623C5.51587 19.1688 5.80399 19.0522 6.01664 18.8426C6.2293 18.633 6.34889 18.3478 6.34888 18.0503H6.38171Z" />
+            </svg>
+            <span>Home</span>
+          </NavLink>
+          <NavLink
+            to="preview"
+            onClick={() => setShowMenu(false)}
+            className={({ isActive }) =>
+              isActive
+                ? "icon-preview yellow__active menu_desc"
+                : "icon-preview"
+            }
+          >
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M15.5834 4.35416H14.6667V2.98832C14.6667 2.22749 14.0434 1.60416 13.2825 1.60416H8.71754C7.95671 1.60416 7.33337 2.22749 7.33337 2.98832V4.35416H6.41671C5.40837 4.35416 4.58337 5.17916 4.58337 6.18749V6.30666C4.87671 6.22416 5.17921 6.18749 5.50004 6.18749H16.5C16.8209 6.18749 17.1234 6.22416 17.4167 6.30666V6.18749C17.4167 5.17916 16.5917 4.35416 15.5834 4.35416Z" />
+              <path d="M12.7692 15.5192C12.4759 15.5192 12.2467 15.7575 12.2467 16.0417C12.2467 16.3258 12.485 16.5642 12.7692 16.5642C13.0534 16.5642 13.2917 16.3258 13.2917 16.0417C13.2917 15.7575 13.0534 15.5192 12.7692 15.5192Z" />
+              <path d="M8.31413 16.3258C8.02079 16.3258 7.79163 16.5642 7.79163 16.8483C7.79163 17.1325 8.02996 17.3708 8.31413 17.3708C8.59829 17.3708 8.83663 17.1325 8.83663 16.8483C8.83663 16.5642 8.60746 16.3258 8.31413 16.3258Z" />
+              <path d="M17.4167 7.68167C17.1234 7.59917 16.8209 7.5625 16.5 7.5625H5.50004C5.17921 7.5625 4.87671 7.59917 4.58337 7.68167C3.00671 8.09417 1.83337 9.53333 1.83337 11.2292V16.7292C1.83337 18.7458 3.48337 20.3958 5.50004 20.3958H16.5C18.5167 20.3958 20.1667 18.7458 20.1667 16.7292V11.2292C20.1667 9.53333 18.9934 8.09417 17.4167 7.68167ZM14.6667 12.1733V16.0417C14.6667 17.0867 13.8142 17.9392 12.7692 17.9392C11.7242 17.9392 10.8717 17.0867 10.8717 16.0417C10.8717 14.9967 11.7242 14.1442 12.7692 14.1442C12.9525 14.1442 13.1267 14.1808 13.2917 14.2267V13.0717L10.2209 13.9058V16.8483C10.2209 16.8575 10.2209 16.8667 10.2117 16.8758C10.2025 17.9117 9.35004 18.755 8.31421 18.755C7.26921 18.755 6.41671 17.9025 6.41671 16.8483C6.41671 15.7942 7.26921 14.9508 8.31421 14.9508C8.49754 14.9508 8.67171 14.9875 8.84587 15.0333V13.3833V11.9625C8.84587 11.1742 9.34087 10.5325 10.0925 10.3308L12.5217 9.66167C13.3009 9.45083 13.7959 9.6525 14.0709 9.86333C14.3459 10.0742 14.6667 10.4867 14.6667 11.3025V12.1733Z" />
+            </svg>
+            <span>My Collections</span>
+          </NavLink>
+          <NavLink
+            to="radio"
+            onClick={() => setShowMenu(false)}
+            className={({ isActive }) =>
+              isActive ? "icon-radio yellow__active menu_desc" : "icon-radio"
+            }
+          >
+            <svg width="20" height="17" viewBox="0 0 20 17">
+              <path d="M14.5834 0.583328H5.41671C5.17837 0.583328 4.94921 0.592495 4.72921 0.629162C2.36421 0.904162 0.833374 2.65499 0.833374 5.16666V11.5833C0.833374 14.3333 2.66671 16.1667 5.41671 16.1667H14.5834C17.3334 16.1667 19.1667 14.3333 19.1667 11.5833V5.16666C19.1667 2.41666 17.3334 0.583328 14.5834 0.583328ZM6.22337 10.6667C4.95837 10.6667 3.93171 9.63999 3.93171 8.37499C3.93171 7.10999 4.95837 6.08333 6.22337 6.08333C7.48837 6.08333 8.51504 7.10999 8.51504 8.37499C8.51504 9.63999 7.48837 10.6667 6.22337 10.6667ZM12.1817 10.8958H11.7234C11.3475 10.8958 11.0359 10.5842 11.0359 10.2083C11.0359 9.83249 11.3475 9.52083 11.7234 9.52083H12.1817C12.5575 9.52083 12.8692 9.83249 12.8692 10.2083C12.8692 10.5842 12.5575 10.8958 12.1817 10.8958ZM15.39 10.8958H14.9317C14.5559 10.8958 14.2442 10.5842 14.2442 10.2083C14.2442 9.83249 14.5559 9.52083 14.9317 9.52083H15.39C15.7659 9.52083 16.0775 9.83249 16.0775 10.2083C16.0775 10.5842 15.7659 10.8958 15.39 10.8958ZM15.39 7.22916H11.7234C11.3475 7.22916 11.0359 6.91749 11.0359 6.54166C11.0359 6.16583 11.3475 5.85416 11.7234 5.85416H15.39C15.7659 5.85416 16.0775 6.16583 16.0775 6.54166C16.0775 6.91749 15.7659 7.22916 15.39 7.22916Z" />
+            </svg>
+            <span>Radio</span>
+          </NavLink>
+          <NavLink
+            to="video"
+            onClick={() => setShowMenu(false)}
+            className={({ isActive }) =>
+              isActive ? "icon-video yellow__active menu_desc" : "icon-video"
+            }
+          >
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M10.3125 7.205H1.83337V14.8408C1.83337 14.8958 1.83337 14.9508 1.84254 14.9967H10.3125V7.205Z" />
+              <path d="M7.04919 5.83H10.3125V1.83333H7.07669V5.71999C7.07669 5.75666 7.05836 5.79333 7.04919 5.83Z" />
+              <path d="M5.70168 5.72V1.98C3.66668 2.40166 2.33751 3.75833 1.95251 5.83H5.72001C5.71085 5.79333 5.70168 5.75666 5.70168 5.72Z" />
+              <path d="M14.8683 1.83333H11.6875V5.83H14.8683V1.83333Z" />
+              <path d="M16.2341 5.83001H20.0475C19.6625 3.74001 18.315 2.37417 16.2433 1.97084V5.80251C16.2433 5.81167 16.2341 5.82084 16.2341 5.83001Z" />
+              <path d="M16.2433 20.0292C18.2508 19.635 19.5708 18.3517 20.0016 16.3717H16.2433V20.0292Z" />
+              <path d="M14.8683 16.3717H11.6875V20.1667H14.8683V16.3717Z" />
+              <path d="M11.6875 14.9967H20.1575C20.1667 14.9508 20.1667 14.8958 20.1667 14.8408V7.205H11.6875V14.9967Z" />
+              <path d="M10.3125 16.3717H7.07666V20.1667H10.3125V16.3717Z" />
+              <path d="M1.99829 16.3717C2.42912 18.3333 3.73079 19.6167 5.70162 20.02V16.3717H1.99829Z" />
+            </svg>
+            <span>Music videos</span>
+          </NavLink>
+          <div className="menu_desc ">
+            <img
+              src={icon_profile}
+              alt="icon-profile"
+              className="icon-profile"
+            />
+            <span className="desc_none">Profile</span>
+          </div>
+          <div className="menu_desc">
+            <img src={icon_logout} alt="icon-logout" className="icon-logout" />
+            <span className="desc_none">Log out</span>
+          </div>
+        </div>
+      </div>
       <div className="search">
         <form onSubmit={handleSubmit} className="search_container">
           <input
@@ -96,8 +190,6 @@ const StyledNavbar = () => {
           <AiOutlineCloseCircle
             onClick={() => {
               setLoading(false);
-              // setSearch();
-              // setSongSearch("");
             }}
             className={loading ? "close_icon" : "close_icon hidden"}
           />
@@ -109,7 +201,7 @@ const StyledNavbar = () => {
         </div>
       )}
       <Play />
-    </>
+    </section>
   );
 };
 
