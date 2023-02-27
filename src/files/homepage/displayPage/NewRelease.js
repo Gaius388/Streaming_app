@@ -11,8 +11,8 @@ function NewRelease({ images, title, subtitle,hub }) {
       <div>
         <img src={images?.coverart} alt={title} className="play__test" />
       </div>
-      <p className="song__title">${title}</p>
-      <p className="singer">${subtitle}</p>
+      <p className="song__title">{title}</p>
+      <p className="singer">{subtitle}</p>
     </div>
   );
 }

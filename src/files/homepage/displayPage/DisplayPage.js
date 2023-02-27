@@ -1,5 +1,4 @@
 import React from "react";
-import "./DisplayPage.css";
 import man_sing from "../../../images/man-sing.svg";
 import goldenage from "../../../images/goldenage.svg";
 import regaee from "../../../images/regaee.svg";

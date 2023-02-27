@@ -602,8 +602,6 @@ body {
 }
 
 .volume__progress {
-  /* -webkit-appearance: none; */
-  /* appearance: none; */
   background: linear-gradient(
     to right,
     #facd66 0%,
@@ -1032,5 +1030,29 @@ body {
     font-size: 3rem;
     color: #609eaf;
     animation: constructing infinite 7s linear alternate-reverse;
+  }
+}
+@media screen and (max-width: 400px) {
+  .playlist__img {
+    width: 3em;
+    border-radius: 0.5em;
+  }
+  .playlist__2 {
+    font-size: 0.7rem;
+  }
+  .playlist__music-tab {
+    grid-template-columns: 5em 1fr 4em;
+  }
+  .active__btn button {
+    padding: 0.6em 1em;
+  }
+  .play-icon {
+    padding-right: 0.5em;
+  }
+  .music-icon {
+    padding-right: 0.5em;
+  }
+  .icon-music1 {
+    left: 2.7em;
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./TomorrowTunes.css";
 import PlayLists from "./PlayLists";
 import shoe_and_radio from "../../../images/shoe_and_radio.svg";
 import play_icon from "../../../images/play-icon.svg";
