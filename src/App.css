@@ -783,7 +783,7 @@ body {
   .left__section {
     grid-template-columns: auto;
     height: 60vh;
-    width: 100%;
+    width: 95%;
   }
 
   .text__content {
@@ -852,7 +852,7 @@ body {
 
   .tomorrow-tunes__section {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 95vw;
     grid-template-rows: auto 2fr;
     margin-left: 1em;
     padding: 0 3em 0 0;
@@ -864,16 +864,16 @@ body {
     margin-top: 3.5em;
   }
   .shoe_and_radio {
-    width: 90vw;
+    width: 97%;
     height: 50vh;
   }
   .tunes__text {
     display: grid;
-    align-items: center;
+    align-items: left;
     font-size: 0.8rem;
   }
   .tunes__text h3 {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     margin: 1em 0 0.5em;
     color: #a4c7c6;
   }
@@ -1022,5 +1022,15 @@ body {
   .play__section-active {
     grid-template-rows: auto;
     justify-items: right;
+  }
+  .collection__top-text span {
+    font-weight: 600;
+    padding: 0.4em 1em;
+    margin-right: 0.3em;
+  }
+  .construct__text {
+    font-size: 3rem;
+    color: #609eaf;
+    animation: constructing infinite 7s linear alternate-reverse;
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Collection.css";
 import Collection from "./Collection";
 import { useGlobalContext } from "../context";
 function Collections() {
